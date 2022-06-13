@@ -13,3 +13,25 @@ prêter de l’argent ou pas, de manière automatique
 A vous de jouer !!!
 */
 
+$salaire = readline("Salaire par mois: ");
+
+for ($i = 0; $i <=25; $i+=5) {
+    echo ("Capacité d'emprunt sur $i ans : ". capacity($salaire, $i). "\n");
+}
+
+    echo ("\nMensualité maximum : ". mensuality($salaire). "\n");
+
+    
+$montantEmprunt = readline("Entrez le montant à emprunter : ");
+
+
+function capacity ($salaire, $year) {
+    $capacityYear = (($salaire*0.33)*12)*$year;
+    return $capacityYear;
+}
+
+function mensuality($salaire) {
+    $mensu = $salaire*0.33;
+    return $mensu;
+}
+
