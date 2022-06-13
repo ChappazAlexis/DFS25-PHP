@@ -1,5 +1,22 @@
 <?php
 
+/*
+TP - Tableaux - 1
+
+Dans un dossier nommé TP_PHP sur votre machine :
+TP_PHP_5 - Rédiger un script PHP nommé “script_php_5.php” permettant de :
+- Créer un tableau
+- Lire une entrée clavier en demandant de tapé une valeur numérique en
+boucle jusqu'à ce que le caractère “q” soit tapé
+- Insérer chaque valeur saisie dans le tableau
+- Afficher le nombre de valeur présente dans le tableau
+- Afficher la somme des valeurs du tableau
+- Afficher les valeurs du tableau
+- Trier dans l’ordre croissant les valeurs du tableau
+- Afficher de nouveau les valeurs du tableau
+Lancer votre script à l’aide de la commande: php script_php_5.php
+*/
+
 $arr = [];
 
 $value = "";
