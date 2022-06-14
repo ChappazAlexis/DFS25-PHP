@@ -7,10 +7,10 @@ $surfaceTotal = 0;
 for ($i = 1; $i <= $nbRoom; $i++) {
     $longRoom = readline("Entrez la longueur de la pièce " . $i . " : ");
     $largRoom = readline("Entrez la largeur de la pièce " . $i . " : ");
+
     $surface = surface($largRoom, $longRoom);
     $surfaceTotal += surface($largRoom, $longRoom);
-    $surfaceTab[] = 
-        array("Pièce nº$i", "Longueur : $longRoom m", "Largeur : $largRoom m", "Surface de cette pièce : $surface m²");
+    $surfaceTab[] = array("Pièce nº$i", "Longueur : $longRoom m", "Largeur : $largRoom m", "Surface de cette pièce : $surface m²");
 }
 
 
