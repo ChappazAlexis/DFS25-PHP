@@ -1,6 +1,6 @@
 <?php
 
-$salaire = readline("Salaire par mois: ");
+$salaire = readline("\nSalaire par mois: ");
 $montantEmprunt = readline("Entrez le montant à emprunter : ");
 
 echo ("\nMensualité maximum : ". mensuality($salaire). "€\n\n");
@@ -27,7 +27,7 @@ function empruntMax($montant, $capacity, $year){
     if ($montant > $capacity){
         echo ("Vous ne pouvez pas emprunter $montant € en $year ans\n\n");
     } else {
-        echo("BRAVO\nVous pouvez emprunter $montant € en $year ans\n\n");
+        echo("BRAVO ! Vous pouvez emprunter $montant € en $year ans\n\n");
     }
 }
 
