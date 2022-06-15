@@ -4,7 +4,6 @@
 $htmlString = file_get_contents('https://www.google.com');
 $link = fopen("link.csv","w+");
 
-//Create a new DOMDocument object.
 $htmlDom = new DOMDocument;
 
 //Load the HTML string into our DOMDocument object.
@@ -33,7 +32,6 @@ foreach($extractedAnchors as $value) {
     fputcsv($link, $value);
 }
 
-//print_r our array of anchors.
 
 /*
 - Dans un script, Créer un fichier CSV
